@@ -1,0 +1,131 @@
+// bower:scss
+@import "bower_components/bootstrap/scss/bootstrap.scss";
+// endbower
+
+@import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800');
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  padding: 40px 0;
+
+  h1 {
+    padding: 0;
+    margin: 0;
+    color: rgb(245, 0, 66);
+    font-size: 60px;
+    font-weight: 800;
+  }
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  width: 100%;
+  height: 300px;
+  padding: 40px;
+  background-color: #050505;
+
+  h3 {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 300;
+  }
+}
+
+.parallax-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+  .shape-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    .shape {
+      position: absolute;
+      border-radius: 50%;
+    }
+  }
+
+  .content-block {
+    padding: 150px 0;
+    z-index: 100;
+
+    h3 {
+      font-size: 120px;
+      color: #000000;
+      font-weight: 600;
+    }
+
+    .section-body {
+      letter-spacing: 1px;
+      color: #fff;
+      font-size: 20px;
+    }
+
+    .section-cta {
+      position: relative;
+      display: inline-block;
+      padding: 8px 24px;
+      background-color: #cf0;
+      color: #333;
+      border-radius: 50px;
+      margin-top: 40px;
+      font-weight: 900;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .section-cta:hover {
+      box-shadow: 0px 0px 15px rgba(255, 0, 76, 0.5);
+      color: #fff;
+      background-color: #00abb6
+    }
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  header {
+    padding: 40px 20px;
+
+    h1 {
+      font-size: 60px;
+    }
+  }
+
+  .parallax-section {
+
+    .content-block {
+      padding: 50px 20px;
+
+      h3 {
+        font-size: 60px;
+      }
+
+      .section-body {
+        letter-spacing: 0.5px;
+        font-size: 18px;
+      }
+    }
+  }
+}
